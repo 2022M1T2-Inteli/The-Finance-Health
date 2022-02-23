@@ -8,7 +8,7 @@
 
 ## The Finance Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/vinicius-oliveira-fernandes-627b68168/">Vinícius Fernandes</a>, <a href="https://www.linkedin.com/in/leandro-duarte/">Leandro Duarte</a>, Igor Scapin Francisco Garcia </a>, <a href="https://www.linkedin.com/in/rodrigo-rodrigues-8b70191ab/">Rodrigo Rodrigues</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/vinicius-oliveira-fernandes-627b68168/">Vinícius Fernandes</a>, <a href="https://www.linkedin.com/in/leandro-duarte/">Leandro Duarte</a>, Igor Scapin Francisco Garcia </a>, <a href="https://www.linkedin.com/in/rodrigo-rodrigues-8b70191ab/">Rodrigo Rodrigues</a>, <a href="https://www.linkedin.com/in/victorbarq/">Felipe Leão</a>, <a href="https://www.linkedin.com/in/victorbarq/"> Mateus Neves</a>, <a href="https://www.linkedin.com/in/victorbarq/"> Beny Frid</a>
 
 ## Descrição
 
