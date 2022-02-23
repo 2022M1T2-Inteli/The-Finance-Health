@@ -8,11 +8,11 @@
 
 ## The Finance Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/vinicius-oliveira-fernandes-627b68168/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/vinicius-oliveira-fernandes-627b68168/">Vinícius Fernandes</a>, <a href="https://www.linkedin.com/in/leandro-duarte/">Leandro Duarte</a>, Igor Scapin Francisco Garcia </a>, <a href="https://www.linkedin.com/in/rodrigo-rodrigues-8b70191ab/">Rodrigo Rodrigues</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
+📜 Desmistificamos o conceito arcaico do Conteúdo de Educação Financeira e Investimentos… Venha aprender sobre Investimentos e Educação Financeira, de uma forma fácil e divertida!
 <br><br>
 Meu projeto é um exemplo de como utilizar o github.
 <br><br>
