@@ -62,6 +62,8 @@ Há também 4 pastas que seguem da seguinte forma:
 
 <b>Android:</b>
 
+https://the-finance-team.itch.io/tfh
+
 Faça o Download do JOGO.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
 
@@ -100,6 +102,14 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://godotengine.org/download">GODOT</a>
+
+Assim que baixar o Godot, próximo passo é baixar o nosso jogo aqui no Github pro seu Desktop (Abra a pasta "src" e baixe o arquivo zipado).
+
+Dentro do Godot você clicará em "Importar" e precisará localizar o arquivo do jogo e clicar nele para entrar. 
+
+Assim que você entrar no jogo no Godot, você clicará no ícone "Play ( > ) para iniciar e visualizar o jogo rodando!
+
+ps: para visualizar o script você pode clicar no ícone de pergaminho e verificar o nosso código com base em cada Cena Criada (cada Cena fica na aba "Arquivos").
 
 ```sh
 make install
