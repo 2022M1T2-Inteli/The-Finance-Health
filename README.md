@@ -107,7 +107,7 @@ Assim que baixar o Godot, próximo passo é baixar o nosso jogo aqui no Github p
 
 Dentro do Godot você clicará em "Importar" e precisará localizar o arquivo do jogo e clicar nele para entrar. 
 
-Assim que você entrar no jogo no Godot, você clicará no ícone "Play ( > ) para iniciar e visualizar o jogo rodando!
+Assim que você entrar no jogo no Godot, você clicará no ícone "Play" ( > ) para iniciar e visualizar o jogo rodando!
 
 ps: para visualizar o script você pode clicar no ícone de pergaminho e verificar o nosso código com base em cada Cena Criada (cada Cena fica na aba "Arquivos").
 
