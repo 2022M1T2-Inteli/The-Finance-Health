@@ -14,10 +14,9 @@
 
 📜 Desmistificamos o conceito arcaico do Conteúdo de Educação Financeira e Investimentos… Venha aprender sobre Investimentos e Educação Financeira, de uma forma fácil e divertida!
 <br><br>
-Meu projeto é um exemplo de como utilizar o github.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="https://img.itch.zone/aW1hZ2UvMTQxNjg0Ni84MzQ1MjM2LnBuZw==/794x1000/ZX818Q.png" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
