@@ -13,15 +13,25 @@
 ## Descrição
 
 📜 Desmistificamos o conceito arcaico do Conteúdo de Educação Financeira e Investimentos… Venha aprender sobre Investimentos e Educação Financeira, de uma forma fácil e divertida!
+
+O objetivo do jogo é passar conhecimentos de educação financeira de uma forma divertida e intuitiva. Isso será retratado na vida de um personagem com problemas reais, na administração de recursos financeiros em situações cotidianas de maneira interativa e atrativa. 
+
 <br><br>
 <br><br>
 <p align="center">
 <img src="https://img.itch.zone/aW1hZ2UvMTQxNjg0Ni84MzQ1MjM2LnBuZw==/794x1000/ZX818Q.png" alt="NOME DO JOGO" border="0">
+
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+
+“The Finance Health” é um jogo focado na vida de um jovem adulto que se depara com algumas adversidades financeiras. O jogo tem como principal objetivo tornar a Educação Financeira e a busca por conhecimento em investimentos, uma coisa divertida. O jogo se passa numa cidade fictícia em que as ações dos jogadores se delimitam a tarefas e desafios diários em espaços da cidades.  
+
+O core do jogo é baseado em consequências e o aprendizado do player com cada ação e atitude mediante os desafios e a administração de alguns recursos financeiros, para uma vida mais independente e estável. Assim o protagonista irá se deparar com problemas reais e terá que tomar as melhores ações mediante cada problema. Esses problemas e desafios serão ilustrados por minigames que definiram seu sucesso ou fracasso em determinada situação. De modo que, posteriormente, sofrerá as consequências dando continuidade no jogo.
+
+
 <br><br>
 Meu projeto ajuda estudantes inteli a configurarem seus githubs.
 <br><br>
