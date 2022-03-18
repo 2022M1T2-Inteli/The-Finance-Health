@@ -13,20 +13,22 @@
 ## Descrição
 
 📜 Desmistificamos o conceito arcaico do Conteúdo de Educação Financeira e Investimentos… Venha aprender sobre Investimentos e Educação Financeira, de uma forma fácil e divertida!
+
+O objetivo do jogo é passar conhecimentos de educação financeira de uma forma divertida e intuitiva. Isso será retratado na vida de um personagem com problemas reais, na administração de recursos financeiros em situações cotidianas de maneira interativa e atrativa. 
 <br><br>
-Meu projeto é um exemplo de como utilizar o github.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="https://img.itch.zone/aW1hZ2UvMTQxNjg0Ni84MzQ1MjM2LnBuZw==/794x1000/ZX818Q.png" alt="NOME DO JOGO" border="0">
+
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
-May the force be with you!
+
+“The Finance Health” é um jogo focado na vida de um jovem adulto que se depara com algumas adversidades financeiras. O jogo tem como principal objetivo tornar a Educação Financeira e a busca por conhecimento em investimentos, uma coisa divertida. O jogo se passa numa cidade fictícia em que as ações dos jogadores se delimitam a tarefas e desafios diários em espaços da cidades.  
+
+O core do jogo é baseado em consequências e o aprendizado do player com cada ação e atitude mediante os desafios e a administração de alguns recursos financeiros, para uma vida mais independente e estável. Assim o protagonista irá se deparar com problemas reais e terá que tomar as melhores ações mediante cada problema. Esses problemas e desafios serão ilustrados por minigames que definiram seu sucesso ou fracasso em determinada situação. De modo que, posteriormente, sofrerá as consequências dando continuidade no jogo.
 <br><br>
 
 ## 🛠 Estrutura de pastas
@@ -61,6 +63,8 @@ Há também 4 pastas que seguem da seguinte forma:
 ## 🛠 Instalação
 
 <b>Android:</b>
+
+https://the-finance-team.itch.io/tfh
 
 Faça o Download do JOGO.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
@@ -100,6 +104,14 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://godotengine.org/download">GODOT</a>
+
+Assim que baixar o Godot, próximo passo é baixar o nosso jogo aqui no Github pro seu Desktop (Abra a pasta "src" e baixe o arquivo zipado).
+
+Dentro do Godot você clicará em "Importar" e precisará localizar o arquivo do jogo e clicar nele para entrar. 
+
+Assim que você entrar no jogo no Godot, você clicará no ícone "Play" ( > ) para iniciar e visualizar o jogo rodando!
+
+ps: para visualizar o script você pode clicar no ícone de pergaminho e verificar o nosso código com base em cada Cena Criada (cada Cena fica na aba "Arquivos").
 
 ```sh
 make install
