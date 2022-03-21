@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Música do Mercadinho.mp3-314d72268648fc17dd2754e7a5aa820a.mp3str"
+
+[deps]
+
+source_file="res://music/Música do Mercadinho.mp3"
+dest_files=[ "res://.import/Música do Mercadinho.mp3-314d72268648fc17dd2754e7a5aa820a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

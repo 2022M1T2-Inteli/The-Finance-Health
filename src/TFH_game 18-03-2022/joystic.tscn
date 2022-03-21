@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/buttons/button_down.png" type="Texture" id=1]
+[ext_resource path="res://assets/buttons/button-right.png" type="Texture" id=2]
+[ext_resource path="res://assets/buttons/button-jump.png" type="Texture" id=3]
+[ext_resource path="res://assets/buttons/button-left.png" type="Texture" id=4]
+
+[node name="joystick" type="CanvasLayer"]
+
+[node name="up" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.294118 )
+position = Vector2( 49, 157 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 3 )
+action = "ui_up"
+
+[node name="down" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.294118 )
+position = Vector2( 49, 283 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 1 )
+action = "ui_down"
+
+[node name="left" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.294118 )
+position = Vector2( -3, 219 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 4 )
+action = "ui_left"
+
+[node name="right" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.294118 )
+position = Vector2( 104, 220 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 2 )
+action = "ui_right"
