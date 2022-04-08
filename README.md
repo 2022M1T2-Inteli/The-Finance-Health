@@ -18,7 +18,7 @@ O objetivo do jogo é passar conhecimentos de educação financeira de uma forma
 <br><br>
 <br><br>
 <p align="center">
-<img src="https://img.itch.zone/aW1hZ2UvMTQxNjg0Ni84MzQ1MjM2LnBuZw==/794x1000/ZX818Q.png" alt="NOME DO JOGO" border="0">
+<img src="https://img.itch.zone/aW1hZ2UvMTQxNjg0Ni84MzQ1MjM2LnBuZw==/794x1000/ZX818Q.png" alt="The Finance Health" border="0">
 
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
