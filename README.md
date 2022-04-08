@@ -24,9 +24,7 @@ O objetivo do jogo é passar conhecimentos de educação financeira de uma forma
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-
-“The Finance Health” é um jogo focado na vida de um jovem adulto que se depara com algumas adversidades financeiras. O jogo tem como principal objetivo tornar a Educação Financeira e a busca por conhecimento em investimentos, uma coisa divertida. O jogo se passa numa cidade fictícia em que as ações dos jogadores se delimitam a tarefas e desafios diários em espaços da cidades.  
+💡 “The Finance Health” é um jogo focado na vida de um jovem adulto que se depara com algumas adversidades financeiras. O jogo tem como principal objetivo tornar a Educação Financeira e a busca por conhecimento em investimentos, uma coisa divertida. O jogo se passa numa cidade fictícia em que as ações dos jogadores se delimitam a tarefas e desafios diários em espaços da cidades.  
 
 O core do jogo é baseado em consequências e o aprendizado do player com cada ação e atitude mediante os desafios e a administração de alguns recursos financeiros, para uma vida mais independente e estável. Assim o protagonista irá se deparar com problemas reais e terá que tomar as melhores ações mediante cada problema. Esses problemas e desafios serão ilustrados por minigames que definiram seu sucesso ou fracasso em determinada situação. De modo que, posteriormente, sofrerá as consequências dando continuidade no jogo.
 <br><br>
@@ -89,7 +87,7 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 📈 Exemplo de uso
 
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado.
+Nosso game tem um grande diferencial por estimular o conhecimento financeiro por meio de desafios que o usuário enfrentará durante cada interação no jogo, tais como: decisões de compra, investimentos e análise de seu conhecimento.
 
 Adicione blocos de códigos e, se necessário, screenshots.
 
@@ -98,8 +96,6 @@ Este modelo pode ser copiado e utilizado à vontade.
 Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
 ## 💻 Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
