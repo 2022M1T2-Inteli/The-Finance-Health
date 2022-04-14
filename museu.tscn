@@ -1,0 +1,1643 @@
+[gd_scene load_steps=100 format=2]
+
+[ext_resource path="res://font/Symtext.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://img/Livro-pixel-removebg-preview.png" type="Texture" id=2]
+[ext_resource path="res://NES - Monopoly - Money.png" type="Texture" id=3]
+[ext_resource path="res://img/coracao_spt-removebg-preview.png" type="Texture" id=4]
+[ext_resource path="res://Celular/celular.png" type="Texture" id=5]
+[ext_resource path="res://img/felicidade_sprite-removebg-preview.png" type="Texture" id=6]
+[ext_resource path="res://img/Mensagemnotifi.png" type="Texture" id=7]
+[ext_resource path="res://NPC_BENY/UI_16x16.png" type="Texture" id=8]
+[ext_resource path="res://img/POPUP-ENTRADA(CENA3).png" type="Texture" id=9]
+[ext_resource path="res://img/Interrogacao-1.png" type="Texture" id=10]
+[ext_resource path="res://NPC_BENY/Premade_Character_07.png" type="Texture" id=11]
+[ext_resource path="res://Modern_Interiors/Designs/Museum_Designs/16x16/Museum_entrance_layer_1.png" type="Texture" id=12]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Museu/museu/livro-pixel-pixel.png" type="Texture" id=14]
+[ext_resource path="res://Museu/museu/Os mandamentos do Investimento.png" type="Texture" id=15]
+[ext_resource path="res://Modern_Interiors/Designs/Museum_Designs/16x16/Museum_entrance_layer_2.png" type="Texture" id=16]
+[ext_resource path="res://Museu/museu/Os mandamentos do Investimento3.png" type="Texture" id=17]
+[ext_resource path="res://music/MusicaMuseu.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Museu/museu/Os mandamentos do Investimento4.png" type="Texture" id=19]
+[ext_resource path="res://Museu/museu/museu.gd" type="Script" id=20]
+[ext_resource path="res://img/Botao.png" type="Texture" id=21]
+[ext_resource path="res://joystic.tscn" type="PackedScene" id=22]
+[ext_resource path="res://img/spacerolar.png" type="Texture" id=23]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 192, 0, 192, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 48, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 112, 0, 112, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 80, 0, 80 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 96, 0, 96, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 160, 0, 160, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 48, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 48, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 112, 0, 112 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 112, 0, 112 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 96, 0, 96, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 0, 0, 80, 0, 80, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 48, 0, 48 )
+
+[sub_resource type="TileSet" id=19]
+0/name = "Museum_entrance_layer_1.png 0"
+0/texture = ExtResource( 12 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 48, 0, 192, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Museum_entrance_layer_1.png 1"
+1/texture = ExtResource( 12 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 224, 16, 32, 48 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Museum_entrance_layer_1.png 2"
+2/texture = ExtResource( 12 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 32, 16, 32, 48 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 11 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Museum_entrance_layer_1.png 3"
+3/texture = ExtResource( 12 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 240, 64, 16, 112 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 12 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Museum_entrance_layer_1.png 4"
+4/texture = ExtResource( 12 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 32, 64, 16, 112 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 13 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "Museum_entrance_layer_1.png 5"
+5/texture = ExtResource( 12 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 160, 176, 96, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 14 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "Museum_entrance_layer_1.png 6"
+6/texture = ExtResource( 12 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 160, 192, 16, 32 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 15 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "Museum_entrance_layer_1.png 7"
+7/texture = ExtResource( 12 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 160, 224, 80, 32 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 16 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "Museum_entrance_layer_1.png 8"
+8/texture = ExtResource( 12 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 176, 288, 64, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 17 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "Museum_entrance_layer_1.png 9"
+9/texture = ExtResource( 12 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 160, 288, 16, 48 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 18 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "Museum_entrance_layer_1.png 10"
+10/texture = ExtResource( 12 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 112, 272, 16, 64 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 3 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Museum_entrance_layer_1.png 11"
+11/texture = ExtResource( 12 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 16, 336, 112, 16 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape = SubResource( 4 )
+11/shape_one_way = false
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+12/name = "Museum_entrance_layer_1.png 12"
+12/texture = ExtResource( 12 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 272, 16, 80 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 5 )
+12/shape_one_way = false
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+12/z_index = 0
+13/name = "Museum_entrance_layer_1.png 13"
+13/texture = ExtResource( 12 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 176, 16, 32 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 6 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+13/z_index = 0
+14/name = "Museum_entrance_layer_1.png 14"
+14/texture = ExtResource( 12 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 112, 176, 16, 64 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 7 )
+14/shape_one_way = false
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+14/z_index = 0
+15/name = "Museum_entrance_layer_1.png 15"
+15/texture = ExtResource( 12 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 16, 176, 96, 32 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape = SubResource( 8 )
+15/shape_one_way = false
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+15/z_index = 0
+16/name = "Museum_entrance_layer_1.png 16"
+16/texture = ExtResource( 12 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 64, 16, 160, 32 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape = SubResource( 9 )
+16/shape_one_way = false
+16/shape_one_way_margin = 1.0
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+16/z_index = 0
+17/name = "Museum_entrance_layer_1.png 17"
+17/texture = ExtResource( 12 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 208, 16, 48 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape = SubResource( 10 )
+17/shape_one_way = false
+17/shape_one_way_margin = 1.0
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+17/z_index = 0
+
+[sub_resource type="TileSet" id=20]
+0/name = "Museum_entrance_layer_1.png 0"
+0/texture = ExtResource( 12 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 178, 55, 22, 19 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Museum_entrance_layer_1.png 1"
+1/texture = ExtResource( 12 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 48, 160, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Museum_entrance_layer_1.png 2"
+2/texture = ExtResource( 12 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 48, 64, 16, 112 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Museum_entrance_layer_1.png 3"
+3/texture = ExtResource( 12 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 224, 64, 16, 112 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+5/name = "Museum_entrance_layer_1.png 5"
+5/texture = ExtResource( 12 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 256, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Museum_entrance_layer_1.png 6"
+6/texture = ExtResource( 12 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 112, 240, 16, 32 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Museum_entrance_layer_1.png 7"
+7/texture = ExtResource( 12 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 128, 176, 32, 160 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Museum_entrance_layer_1.png 8"
+8/texture = ExtResource( 12 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 160, 256, 80, 32 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "Museum_entrance_layer_1.png 9"
+9/texture = ExtResource( 12 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 16, 208, 96, 128 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 0, 0, 96, 0, 96, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 0, 16, 32, 16, 32, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 0, 16, 32, 16, 32, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 6, 14, 27, 15, 32, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+points = PoolVector2Array( 0, 0, 96, 0, 96, 48, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+points = PoolVector2Array( 8, 14, 25, 12, 32, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=47]
+points = PoolVector2Array( 0, 16, 16, 0, 16, 16, 0, 32 )
+
+[sub_resource type="ConcavePolygonShape2D" id=48]
+segments = PoolVector2Array( 0, 0, 16, 0, 16, 0, 16, 32, 16, 32, 0, 32, 0, 32, 0, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=49]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+points = PoolVector2Array( 0, 0, 96, 0, 96, 80, 0, 80 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 48, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+points = PoolVector2Array( 6, 16, 26, 14, 32, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+points = PoolVector2Array( 0, 16, 32, 16, 32, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 48, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+points = PoolVector2Array( 0, 16, 32, 16, 32, 64, 0, 64 )
+
+[sub_resource type="TileSet" id=37]
+0/name = "Museum_entrance_layer_2.png 0"
+0/texture = ExtResource( 16 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 203, 285, 14, 17 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Museum_entrance_layer_2.png 1"
+1/texture = ExtResource( 16 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 16, 272, 96, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 21 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Museum_entrance_layer_2.png 2"
+2/texture = ExtResource( 16 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 16, 176, 96, 80 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 29 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 29 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+4/name = "Museum_entrance_layer_2.png 4"
+4/texture = ExtResource( 16 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 176, 240, 32, 48 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Museum_entrance_layer_2.png 5"
+5/texture = ExtResource( 16 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 192, 128, 16, 48 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 32 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 32 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "Museum_entrance_layer_2.png 6"
+6/texture = ExtResource( 16 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 208, 112, 32, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 33 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 33 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "Museum_entrance_layer_2.png 7"
+7/texture = ExtResource( 16 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 48, 112, 32, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 34 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 34 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "Museum_entrance_layer_2.png 8"
+8/texture = ExtResource( 16 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 80, 128, 16, 48 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 35 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 35 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "Museum_entrance_layer_2.png 9"
+9/texture = ExtResource( 16 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 96, 64, 32, 64 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 36 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 36 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "Museum_entrance_layer_2.png 10"
+10/texture = ExtResource( 16 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 128, 64, 32, 64 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 22 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Museum_entrance_layer_2.png 11"
+11/texture = ExtResource( 16 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 160, 64, 32, 64 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape = SubResource( 23 )
+11/shape_one_way = false
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+12/name = "Museum_entrance_layer_2.png 12"
+12/texture = ExtResource( 16 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 208, 80, 32, 16 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "Museum_entrance_layer_2.png 13"
+13/texture = ExtResource( 16 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 48, 80, 32, 16 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "Museum_entrance_layer_2.png 14"
+14/texture = ExtResource( 16 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 48, 32, 16, 32 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 24 )
+14/shape_one_way = false
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+14/z_index = 0
+15/name = "Museum_entrance_layer_2.png 15"
+15/texture = ExtResource( 16 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 64, 0, 32, 64 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape = SubResource( 25 )
+15/shape_one_way = false
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 25 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+15/z_index = 0
+16/name = "Museum_entrance_layer_2.png 16"
+16/texture = ExtResource( 16 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 96, 16, 96, 48 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape = SubResource( 26 )
+16/shape_one_way = false
+16/shape_one_way_margin = 1.0
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 26 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+16/z_index = 0
+17/name = "Museum_entrance_layer_2.png 17"
+17/texture = ExtResource( 16 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 192, 0, 32, 64 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape = SubResource( 27 )
+17/shape_one_way = false
+17/shape_one_way_margin = 1.0
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 27 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+17/z_index = 0
+18/name = "Museum_entrance_layer_2.png 18"
+18/texture = ExtResource( 16 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 224, 32, 16, 32 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape = SubResource( 47 )
+18/shape_one_way = false
+18/shape_one_way_margin = 1.0
+18/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 47 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 48 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 49 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+18/z_index = 0
+19/name = "Museum_entrance_layer_2.png 19"
+19/texture = ExtResource( 16 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 112, 208, 48, 32 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape_one_way = false
+19/shape_one_way_margin = 0.0
+19/shapes = [  ]
+19/z_index = 0
+20/name = "Museum_entrance_layer_2.png 20"
+20/texture = ExtResource( 16 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 176, 240, 16, 16 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shape_offset = Vector2( 0, 0 )
+20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+20/shape_one_way = false
+20/shape_one_way_margin = 0.0
+20/shapes = [  ]
+20/z_index = 0
+
+[sub_resource type="DynamicFont" id=38]
+size = 12
+outline_size = 10
+outline_color = Color( 0.0117647, 0.00392157, 0.00392157, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=39]
+size = 10
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=40]
+
+[sub_resource type="StyleBoxFlat" id=41]
+bg_color = Color( 1, 0.0117647, 0.0117647, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.0196078, 0.00392157, 0.00392157, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 0.172549, 0.776471, 0.121569, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 7
+
+[sub_resource type="StyleBoxFlat" id=44]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="DynamicFont" id=45]
+size = 11
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=74]
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=46]
+extents = Vector2( 15, 3 )
+
+[sub_resource type="RectangleShape2D" id=51]
+extents = Vector2( 12.5, 1.125 )
+
+[sub_resource type="DynamicFont" id=116]
+size = 11
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="AtlasTexture" id=112]
+atlas = ExtResource( 8 )
+region = Rect2( 48, 16, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=113]
+atlas = ExtResource( 8 )
+region = Rect2( 128, 128, 16, 16 )
+
+[sub_resource type="SpriteFrames" id=114]
+animations = [ {
+"frames": [ SubResource( 112 ), SubResource( 113 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=70]
+atlas = ExtResource( 8 )
+region = Rect2( 64, 0, 16, 28 )
+
+[sub_resource type="AtlasTexture" id=71]
+atlas = ExtResource( 8 )
+region = Rect2( 256, 28, 16, 28 )
+
+[sub_resource type="SpriteFrames" id=72]
+animations = [ {
+"frames": [ SubResource( 70 ), SubResource( 71 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 11 )
+region = Rect2( 16, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 11 )
+region = Rect2( 32, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 11 )
+region = Rect2( 48, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 11 )
+region = Rect2( 64, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=62]
+atlas = ExtResource( 11 )
+region = Rect2( 80, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=63]
+atlas = ExtResource( 11 )
+region = Rect2( 96, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 11 )
+region = Rect2( 112, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=65]
+atlas = ExtResource( 11 )
+region = Rect2( 128, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=66]
+atlas = ExtResource( 11 )
+region = Rect2( 144, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=67]
+atlas = ExtResource( 11 )
+region = Rect2( 160, 190, 16, 38 )
+
+[sub_resource type="AtlasTexture" id=68]
+atlas = ExtResource( 11 )
+region = Rect2( 176, 190, 16, 38 )
+
+[sub_resource type="SpriteFrames" id=69]
+animations = [ {
+"frames": [ SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=115]
+extents = Vector2( 8.57143, 6.33326 )
+
+[sub_resource type="CapsuleShape2D" id=120]
+height = 44.4849
+
+[sub_resource type="RectangleShape2D" id=117]
+extents = Vector2( 33, 14.5 )
+
+[sub_resource type="RectangleShape2D" id=119]
+extents = Vector2( 11, 32 )
+
+[sub_resource type="RectangleShape2D" id=118]
+extents = Vector2( 7, 16.5 )
+
+[sub_resource type="RectangleShape2D" id=50]
+extents = Vector2( 5, 13.5429 )
+
+[sub_resource type="RectangleShape2D" id=52]
+extents = Vector2( 13.3463, 23.8382 )
+
+[sub_resource type="RectangleShape2D" id=53]
+extents = Vector2( 8.05003, 27.5705 )
+
+[node name="museu" type="Node2D"]
+script = ExtResource( 20 )
+
+[node name="parede" type="TileMap" parent="."]
+tile_set = SubResource( 19 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 10, 0, 0, 65545, 2, 0, 65547, 16, 0, 65557, 1, 0, 262153, 4, 0, 262166, 3, 0, 720902, 13, 0, 720903, 15, 0, 720909, 14, 0, 720913, 5, 0, 786449, 6, 0, 851974, 17, 0, 917521, 7, 0, 1114118, 12, 0, 1114125, 10, 0, 1179662, 8, 0, 1179666, 8, 0, 1376263, 11, 0 )
+
+[node name="chao" type="TileMap" parent="."]
+tile_set = SubResource( 20 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 196619, 5, 0, 196620, 5, 0, 196621, 5, 0, 196622, 5, 0, 196623, 5, 0, 196624, 5, 0, 196625, 5, 0, 196626, 5, 0, 196627, 5, 0, 196628, 5, 0, 262154, 5, 0, 262155, 5, 0, 262156, 5, 0, 262157, 5, 0, 262158, 5, 0, 262159, 5, 0, 262160, 5, 0, 262161, 5, 0, 262162, 5, 0, 262163, 5, 0, 262164, 5, 0, 262165, 5, 0, 327690, 5, 0, 327691, 5, 0, 327692, 5, 0, 327693, 5, 0, 327694, 5, 0, 327695, 5, 0, 327696, 536870912, 0, 327697, 536870912, 0, 327698, 5, 0, 327699, 5, 0, 327700, 5, 0, 327701, 5, 0, 393226, 5, 0, 393227, 5, 0, 393228, 5, 0, 393229, 5, 0, 393230, 5, 0, 393231, 5, 0, 393232, 536870912, 0, 393233, 536870912, 0, 393234, 5, 0, 393235, 5, 0, 393236, 5, 0, 393237, 5, 0, 458762, 5, 0, 458763, 5, 0, 458764, 5, 0, 458765, 5, 0, 458766, 5, 0, 458767, 5, 0, 458768, 536870917, 0, 458769, 536870917, 0, 458770, 536870917, 0, 458771, 5, 0, 458772, 5, 0, 458773, 5, 0, 524298, 5, 0, 524299, 5, 0, 524300, 5, 0, 524301, 5, 0, 524302, 5, 0, 524303, 5, 0, 524304, 5, 0, 524305, 5, 0, 524306, 5, 0, 524307, 5, 0, 524308, 5, 0, 524309, 5, 0, 589834, 5, 0, 589835, 5, 0, 589836, 5, 0, 589837, 5, 0, 589838, 5, 0, 589839, 5, 0, 589840, 536870917, 0, 589841, 536870917, 0, 589842, 5, 0, 589843, 5, 0, 589844, 5, 0, 589845, 5, 0, 655370, 5, 0, 655371, 5, 0, 655372, 536870917, 0, 655373, 536870917, 0, 655374, 536870917, 0, 655375, 5, 0, 655376, 5, 0, 655377, 5, 0, 655378, 5, 0, 655379, 5, 0, 655380, 5, 0, 655381, 5, 0, 720910, 5, 0, 720911, 5, 0, 720912, 5, 0, 786446, 5, 0, 786447, 5, 0, 786448, 5, 0, 786450, 5, 0, 786451, 5, 0, 786452, 5, 0, 786453, 5, 0, 786454, 5, 0, 851975, 9, 0, 851982, 5, 0, 851983, 5, 0, 851984, 5, 0, 851986, 5, 0, 851987, 5, 0, 851988, 5, 0, 851989, 5, 0, 851990, 5, 0, 917518, 5, 0, 917519, 5, 0, 917520, 5, 0, 983053, 6, 0, 983054, 5, 0, 983055, 5, 0, 983056, 5, 0, 1048582, 5, 0, 1048590, 5, 0, 1048591, 5, 0, 1048592, 5, 0, 1048593, 8, 0, 1114126, 5, 0, 1114127, 5, 0, 1114128, 5, 0 )
+
+[node name="objetos" type="TileMap" parent="."]
+tile_set = SubResource( 37 )
+cell_size = Vector2( 16, 16 )
+show_collision = true
+format = 1
+tile_data = PoolIntArray( 0, 1048597, 0, 2, 0, 0, 5, 0, 0, 8, 0, 0, 11, 15, 0, 14, 0, 0, 18, 0, 0, 65549, 16, 0, 196618, 18, 0, 196629, 536870926, 0, 262160, 10, 0, 393226, 536870930, 0, 393235, 13, 0, 458764, 536870919, 0, 458772, 6, 0, 589834, 14, 0, 589837, 536870912, 0, 589840, 12, 0, 655373, 536870912, 0, 720903, 2, 0, 720914, 536870912, 0, 786446, 536870931, 0, 983058, 4, 0, 983061, 14, 0, 1048597, 14, 0, 1114119, 1, 0, 1114127, -1610612716, 0, 1114129, -1610612716, 0 )
+
+[node name="Livro4" type="Sprite" parent="objetos"]
+position = Vector2( 341, 262 )
+scale = Vector2( 0.428571, 0.421053 )
+texture = ExtResource( 2 )
+hframes = 18
+vframes = 10
+
+[node name="Livro5" type="Sprite" parent="objetos"]
+position = Vector2( 342, 245 )
+scale = Vector2( 0.428571, 0.421053 )
+texture = ExtResource( 2 )
+hframes = 18
+vframes = 10
+
+[node name="Livro6" type="Sprite" parent="objetos"]
+position = Vector2( 169.543, 53.5848 )
+rotation = -0.00752019
+scale = Vector2( 0.629557, 0.473993 )
+texture = ExtResource( 14 )
+hframes = 10
+vframes = 4
+frame = 21
+
+[node name="Player" parent="." instance=ExtResource( 13 )]
+position = Vector2( 122, 261 )
+scale = Vector2( 1.00159, 1.00208 )
+collision_layer = 2571
+collision_mask = 2601
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 29, -27 )
+current = true
+zoom = Vector2( 0.7, 0.7 )
+limit_left = -311
+limit_top = -528
+limit_right = 563
+limit_bottom = 400
+smoothing_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player"]
+
+[node name="h" type="Label" parent="Player/CanvasLayer"]
+anchor_right = 0.062
+anchor_bottom = 0.094
+margin_left = 296.0
+margin_top = -3.0
+margin_right = 265.32
+margin_bottom = -17.84
+custom_fonts/font = SubResource( 38 )
+text = "h"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dia" type="Label" parent="Player/CanvasLayer"]
+margin_left = 297.0
+margin_top = 10.0
+margin_right = 304.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 39 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlBarMoney" type="Control" parent="Player/CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="life" type="ProgressBar" parent="Player/CanvasLayer/ControlBarMoney"]
+margin_left = 471.0
+margin_top = 16.0
+margin_right = 603.0
+margin_bottom = 32.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 40 )
+custom_styles/fg = SubResource( 41 )
+custom_styles/bg = SubResource( 42 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="life_spt" type="Sprite" parent="Player/CanvasLayer/ControlBarMoney/life"]
+position = Vector2( 129, 8 )
+scale = Vector2( 0.0953939, 0.12426 )
+texture = ExtResource( 4 )
+hframes = 3
+
+[node name="Happy" type="ProgressBar" parent="Player/CanvasLayer/ControlBarMoney"]
+light_mask = 9
+anchor_left = 0.066
+anchor_right = 0.074
+margin_left = 491.36
+margin_top = 25.0
+margin_right = 592.24
+margin_bottom = 33.0
+custom_colors/font_color = Color( 0.843137, 0.258824, 0.258824, 1 )
+custom_colors/font_color_shadow = Color( 0.796078, 0.396078, 0.396078, 1 )
+custom_styles/fg = SubResource( 43 )
+custom_styles/bg = SubResource( 44 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="felicidade_bar" type="Sprite" parent="Player/CanvasLayer/ControlBarMoney/Happy"]
+position = Vector2( 104.41, 4.12518 )
+scale = Vector2( 0.20738, 0.12209 )
+texture = ExtResource( 6 )
+hframes = 3
+vframes = 4
+
+[node name="dindin" type="Label" parent="Player/CanvasLayer/ControlBarMoney"]
+margin_left = 557.0
+margin_top = 35.0
+margin_right = 577.0
+margin_bottom = 52.0
+rect_scale = Vector2( 1.5, 1.5 )
+custom_fonts/font = SubResource( 45 )
+text = "00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="din_sprite" type="Sprite" parent="Player/CanvasLayer/ControlBarMoney/dindin"]
+position = Vector2( -16, 8 )
+rotation = 1.57429
+scale = Vector2( 0.75, 0.883333 )
+texture = ExtResource( 3 )
+hframes = 7
+frame = 3
+
+[node name="celular" type="Sprite" parent="Player/CanvasLayer"]
+position = Vector2( 15, 47 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="cenaCelular" type="Button" parent="Player/CanvasLayer/celular"]
+margin_left = -111.0
+margin_top = -421.0
+margin_right = 233.0
+margin_bottom = 188.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="notificacao" type="Sprite" parent="Player/CanvasLayer/celular"]
+position = Vector2( 70.0001, -140 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+
+[node name="conhecimento" type="Label" parent="Player/CanvasLayer"]
+margin_left = 244.0
+margin_top = 4.0
+margin_right = 284.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 74 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuButton" type="MenuButton" parent="Player/CanvasLayer"]
+margin_left = 42.0
+margin_top = 5.99997
+margin_right = 54.0
+margin_bottom = 26.0
+focus_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Interrogacao" type="Sprite" parent="Player/CanvasLayer/MenuButton"]
+position = Vector2( 7.9873, 4.98965 )
+scale = Vector2( 0.522294, 0.527201 )
+texture = ExtResource( 10 )
+
+[node name="PopEntrada" type="Sprite" parent="Player/CanvasLayer/MenuButton"]
+visible = false
+position = Vector2( 169.893, 67.5 )
+scale = Vector2( 0.201153, 0.173148 )
+texture = ExtResource( 9 )
+
+[node name="rolar" type="TouchScreenButton" parent="Player/CanvasLayer"]
+modulate = Color( 1, 1, 1, 0.294118 )
+position = Vector2( 544, 288 )
+scale = Vector2( 1.975, 1.875 )
+normal = ExtResource( 23 )
+action = "roll"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 270, 78 )
+shape = SubResource( 46 )
+
+[node name="Area2D_saida_museu" type="Area2D" parent="."]
+position = Vector2( 153, 17 )
+
+[node name="Saida_mercado" type="CollisionShape2D" parent="Area2D_saida_museu"]
+position = Vector2( 107.5, 269.125 )
+shape = SubResource( 51 )
+
+[node name="Saida" type="Label" parent="Area2D_saida_museu"]
+margin_left = 94.0
+margin_top = 281.0
+margin_right = 130.0
+margin_bottom = 298.0
+rect_scale = Vector2( 0.75, 0.75 )
+custom_fonts/font = SubResource( 116 )
+text = "Saída"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animated123" type="Node2D" parent="."]
+
+[node name="seta" type="AnimatedSprite" parent="animated123"]
+position = Vector2( 179, 148 )
+frames = SubResource( 114 )
+frame = 1
+playing = true
+
+[node name="seta2" type="AnimatedSprite" parent="animated123"]
+position = Vector2( 180, 101 )
+frames = SubResource( 114 )
+frame = 1
+playing = true
+
+[node name="seta3" type="AnimatedSprite" parent="animated123"]
+position = Vector2( 180, 59 )
+frames = SubResource( 114 )
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="animated123"]
+position = Vector2( 220, 215 )
+frames = SubResource( 72 )
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="animated123"]
+position = Vector2( 217, 236.5 )
+scale = Vector2( 0.875, 0.868421 )
+frames = SubResource( 69 )
+frame = 5
+playing = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="animated123/AnimatedSprite2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animated123/AnimatedSprite2/StaticBody2D"]
+position = Vector2( 0.571426, 10.3638 )
+shape = SubResource( 115 )
+
+[node name="Cobranca" type="Area2D" parent="animated123/AnimatedSprite2/StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animated123/AnimatedSprite2/StaticBody2D/Cobranca"]
+position = Vector2( 2.38419e-06, 8.63639 )
+shape = SubResource( 120 )
+
+[node name="Button" type="Button" parent="animated123/AnimatedSprite2/StaticBody2D/Cobranca"]
+margin_left = -36.5713
+margin_top = -25.9092
+margin_right = 1562.43
+margin_bottom = 2225.09
+rect_scale = Vector2( 0.02, 0.02 )
+icon = ExtResource( 21 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Price" type="Label" parent="animated123/AnimatedSprite2/StaticBody2D/Cobranca"]
+margin_left = -24.0
+margin_top = -29.3636
+margin_right = -4.0
+margin_bottom = -12.3636
+rect_scale = Vector2( 0.75, 0.75 )
+custom_fonts/font = SubResource( 116 )
+text = "00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="din_sprite" type="Sprite" parent="animated123/AnimatedSprite2/StaticBody2D/Cobranca/Price"]
+position = Vector2( -16, 8 )
+rotation = 1.57429
+scale = Vector2( 0.75, 0.883333 )
+texture = ExtResource( 3 )
+hframes = 7
+frame = 3
+
+[node name="Entrada" type="StaticBody2D" parent="."]
+position = Vector2( 215, 48 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Entrada"]
+position = Vector2( 31, 155.5 )
+shape = SubResource( 117 )
+
+[node name="Entrada2" type="StaticBody2D" parent="."]
+position = Vector2( 265, 107 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Entrada2"]
+position = Vector2( 40, 155 )
+shape = SubResource( 119 )
+
+[node name="EntradaMuseu" type="StaticBody2D" parent="."]
+position = Vector2( 34, 105 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EntradaMuseu"]
+position = Vector2( 57, 157.5 )
+shape = SubResource( 118 )
+
+[node name="livros" type="Node2D" parent="."]
+
+[node name="Livro1" type="Sprite" parent="livros"]
+position = Vector2( 345, 51 )
+scale = Vector2( 0.519233, 0.468227 )
+texture = ExtResource( 14 )
+hframes = 11
+vframes = 4
+frame = 21
+
+[node name="Livro1" type="Area2D" parent="livros/Livro1"]
+position = Vector2( 6.10352e-05, -6.40716 )
+
+[node name="Mandamento1" type="CollisionShape2D" parent="livros/Livro1/Livro1"]
+position = Vector2( -323.554, 30.6285 )
+shape = SubResource( 50 )
+
+[node name="Mandamento" type="Sprite" parent="livros/Livro1/Livro1"]
+position = Vector2( -223.406, -57.6643 )
+scale = Vector2( 0.438598, 0.408851 )
+texture = ExtResource( 15 )
+
+[node name="Livro2" type="Sprite" parent="livros"]
+position = Vector2( 166.665, 102.832 )
+rotation = -0.0335803
+scale = Vector2( 0.716467, 0.545739 )
+texture = ExtResource( 14 )
+hframes = 11
+vframes = 4
+frame = 21
+
+[node name="Livro2" type="Area2D" parent="livros/Livro2"]
+
+[node name="Mandamento3" type="CollisionShape2D" parent="livros/Livro2/Livro2"]
+position = Vector2( 6.31447, 13.2399 )
+rotation = 1.86265e-08
+shape = SubResource( 52 )
+
+[node name="Mandamento2" type="Sprite" parent="livros/Livro2/Livro2"]
+position = Vector2( 102.338, -112.511 )
+rotation = 0.0391256
+scale = Vector2( 0.319485, 0.371447 )
+texture = ExtResource( 17 )
+
+[node name="Livro3" type="Sprite" parent="livros"]
+position = Vector2( 165.554, 149.108 )
+rotation = -0.0335803
+scale = Vector2( 0.729563, 0.470243 )
+texture = ExtResource( 14 )
+hframes = 11
+vframes = 4
+frame = 21
+
+[node name="Livro3" type="Area2D" parent="livros/Livro3"]
+position = Vector2( 2.02406, 1.39032 )
+
+[node name="Mandamento4" type="CollisionShape2D" parent="livros/Livro3/Livro3"]
+position = Vector2( 10.9301, 17.5708 )
+shape = SubResource( 53 )
+
+[node name="Mandamento3" type="Sprite" parent="livros/Livro3/Livro3"]
+position = Vector2( 112.298, -92.6687 )
+rotation = 0.0343728
+scale = Vector2( 0.425193, 0.455418 )
+texture = ExtResource( 19 )
+
+[node name="MusicaMuseu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 18 )
+autoplay = true
+
+[node name="joystick" parent="." instance=ExtResource( 22 )]
+
+[connection signal="pressed" from="Player/CanvasLayer/celular/cenaCelular" to="Player" method="_on_cenaCelular_pressed"]
+[connection signal="mouse_entered" from="Player/CanvasLayer/MenuButton" to="Player" method="_on_MenuButton_mouse_entered"]
+[connection signal="mouse_exited" from="Player/CanvasLayer/MenuButton" to="Player" method="_on_MenuButton_mouse_exited"]
+[connection signal="body_entered" from="Area2D_saida_museu" to="Player" method="_on_Area2D_saida_museu_body_entered"]
+[connection signal="body_entered" from="animated123/AnimatedSprite2/StaticBody2D/Cobranca" to="." method="_on_Cobranca_body_entered"]
+[connection signal="body_exited" from="animated123/AnimatedSprite2/StaticBody2D/Cobranca" to="." method="_on_Cobranca_body_exited"]
+[connection signal="pressed" from="animated123/AnimatedSprite2/StaticBody2D/Cobranca/Button" to="." method="_on_Button_pressed"]
+[connection signal="body_entered" from="livros/Livro1/Livro1" to="." method="_on_Livro1_body_entered"]
+[connection signal="body_exited" from="livros/Livro1/Livro1" to="." method="_on_Livro1_body_exited"]
+[connection signal="body_entered" from="livros/Livro2/Livro2" to="." method="_on_Livro2_body_entered"]
+[connection signal="body_exited" from="livros/Livro2/Livro2" to="." method="_on_Livro2_body_exited"]
+[connection signal="body_entered" from="livros/Livro3/Livro3" to="." method="_on_Livro3_body_entered"]
+[connection signal="body_exited" from="livros/Livro3/Livro3" to="." method="_on_Livro3_body_exited"]

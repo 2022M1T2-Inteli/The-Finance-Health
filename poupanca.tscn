@@ -1,0 +1,194 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://poupanca_invest.gd" type="Script" id=1]
+[ext_resource path="res://bt_invest.gd" type="Script" id=2]
+[ext_resource path="res://img/Fundo-Celular.png" type="Texture" id=3]
+[ext_resource path="res://Celular/celular 16.png" type="Texture" id=4]
+[ext_resource path="res://font/Symtext.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://img/Interrogacao-1.png" type="Texture" id=6]
+[ext_resource path="res://img/Text-Box-Black-INVEST.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 8
+font_data = ExtResource( 5 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Fundo-Celular" type="Sprite" parent="."]
+position = Vector2( 315.5, 182 )
+scale = Vector2( 0.349479, 0.368519 )
+texture = ExtResource( 3 )
+
+[node name="Celular16" type="Sprite" parent="."]
+position = Vector2( 288, 219 )
+scale = Vector2( 0.508, 0.508 )
+texture = ExtResource( 4 )
+
+[node name="PontoInterrogaPP" type="Sprite" parent="."]
+position = Vector2( 374, 101 )
+scale = Vector2( 1.0212, 0.935186 )
+texture = ExtResource( 6 )
+
+[node name="bt_invest" type="Button" parent="."]
+margin_left = 253.0
+margin_top = 134.0
+margin_right = 362.0
+margin_bottom = 158.0
+flat = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inserir" type="TextEdit" parent="bt_invest"]
+margin_left = 24.0
+margin_top = -72.0
+margin_right = 192.0
+margin_bottom = -8.0
+custom_fonts/font = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ir" type="Button" parent="bt_invest/inserir"]
+margin_left = 93.0
+margin_top = 38.0
+margin_right = 170.0
+margin_bottom = 68.0
+custom_fonts/font = SubResource( 6 )
+text = "enviar"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bt_sacar" type="Button" parent="."]
+margin_left = 253.0
+margin_top = 182.0
+margin_right = 360.0
+margin_bottom = 208.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sacar" type="TextEdit" parent="bt_sacar"]
+margin_left = 32.0
+margin_top = -48.0
+margin_right = 200.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sac_ir" type="Button" parent="bt_sacar/sacar"]
+margin_left = 91.0
+margin_top = 36.0
+margin_right = 168.0
+margin_bottom = 66.0
+custom_fonts/font = SubResource( 7 )
+text = "enviar"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="investido" type="Label" parent="."]
+margin_left = 293.0
+margin_top = 209.0
+margin_right = 378.0
+margin_bottom = 244.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="conta" type="Label" parent="."]
+margin_left = 290.0
+margin_top = 249.0
+margin_right = 379.0
+margin_bottom = 283.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 296.0
+margin_top = 297.0
+margin_right = 326.0
+margin_bottom = 327.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuButton" type="MenuButton" parent="."]
+margin_left = 363.0
+margin_top = 92.0
+margin_right = 385.0
+margin_bottom = 112.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PoupancaInfo" type="Sprite" parent="MenuButton"]
+position = Vector2( 77, 93 )
+scale = Vector2( 1.09238, 1.09238 )
+texture = ExtResource( 7 )
+
+[node name="InfoPP" type="Label" parent="MenuButton/PoupancaInfo"]
+anchor_left = 0.045
+anchor_top = 0.031
+anchor_right = 1.0
+anchor_bottom = 1.066
+margin_left = -49.455
+margin_top = -72.495
+margin_right = -47.0
+margin_bottom = -72.57
+custom_fonts/font = SubResource( 3 )
+text = "Poupança GTB
+
+Rentabilidade:
+2% por dia
+
+Vencimento:
+Dinheiro pode ser retirado a qualquer hora."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="bt_invest" to="." method="_on_bt_invest_pressed"]
+[connection signal="pressed" from="bt_invest/inserir/ir" to="." method="_on_ir_pressed"]
+[connection signal="pressed" from="bt_sacar" to="." method="_on_bt_sacar_pressed"]
+[connection signal="pressed" from="bt_sacar/sacar/sac_ir" to="." method="_on_sac_ir_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="mouse_entered" from="MenuButton" to="." method="_on_MenuButton_mouse_entered"]
+[connection signal="mouse_exited" from="MenuButton" to="." method="_on_MenuButton_mouse_exited"]
