@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MusicaMuseu.mp3-f95429b14185aa7f9319792f47c247fe.mp3str"
+
+[deps]
+
+source_file="res://music/MusicaMuseu.mp3"
+dest_files=[ "res://.import/MusicaMuseu.mp3-f95429b14185aa7f9319792f47c247fe.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

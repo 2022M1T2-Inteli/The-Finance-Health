@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Musica - LojaDaniel.mp3-3b2034efaf95913b0d52917487a156e3.mp3str"
+
+[deps]
+
+source_file="res://music/Musica - LojaDaniel.mp3"
+dest_files=[ "res://.import/Musica - LojaDaniel.mp3-3b2034efaf95913b0d52917487a156e3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://img.gd" type="Script" id=1]
+[ext_resource path="res://img/Fundo-Celular.png" type="Texture" id=2]
+[ext_resource path="res://Celular/celular20.png" type="Texture" id=3]
+[ext_resource path="res://font/Symtext.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource( 4 )
+
+[node name="investir" type="Node2D"]
+
+[node name="Fundo-Celular" type="Sprite" parent="."]
+position = Vector2( 319.5, 186 )
+scale = Vector2( 0.354687, 0.372222 )
+texture = ExtResource( 2 )
+
+[node name="img" type="Sprite" parent="."]
+position = Vector2( 290, 220 )
+scale = Vector2( 0.508, 0.508 )
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+
+[node name="sair" type="Button" parent="img"]
+margin_left = 12.0
+margin_top = 154.0
+margin_right = 71.0
+margin_bottom = 209.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="investimento" type="Button" parent="img"]
+margin_left = -71.0
+margin_top = -167.0
+margin_right = 138.0
+margin_bottom = -120.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="extrato_ir" type="Button" parent="img"]
+margin_left = -73.0
+margin_top = -20.0
+margin_right = 138.0
+margin_bottom = 21.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="img"]
+margin_left = 29.5276
+margin_top = -253.937
+margin_right = 125.528
+margin_bottom = -197.937
+custom_colors/font_color = Color( 0.184314, 0.65098, 0.184314, 1 )
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="img/sair" to="img" method="_on_sair_pressed"]
+[connection signal="pressed" from="img/investimento" to="img" method="_on_investimento_pressed"]
+[connection signal="pressed" from="img/extrato_ir" to="img" method="_on_extrato_ir_pressed"]
