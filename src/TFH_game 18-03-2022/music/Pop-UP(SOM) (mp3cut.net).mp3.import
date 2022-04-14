@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pop-UP(SOM) (mp3cut.net).mp3-2b448ab48c62e2ff93b8da1477aebb96.mp3str"
+
+[deps]
+
+source_file="res://music/Pop-UP(SOM) (mp3cut.net).mp3"
+dest_files=[ "res://.import/Pop-UP(SOM) (mp3cut.net).mp3-2b448ab48c62e2ff93b8da1477aebb96.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

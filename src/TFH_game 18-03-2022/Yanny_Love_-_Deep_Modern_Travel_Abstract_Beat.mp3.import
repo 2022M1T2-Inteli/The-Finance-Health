@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Yanny_Love_-_Deep_Modern_Travel_Abstract_Beat.mp3-b77f9b2c91d199885bb6e42842e20fdd.mp3str"
+
+[deps]
+
+source_file="res://Yanny_Love_-_Deep_Modern_Travel_Abstract_Beat.mp3"
+dest_files=[ "res://.import/Yanny_Love_-_Deep_Modern_Travel_Abstract_Beat.mp3-b77f9b2c91d199885bb6e42842e20fdd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

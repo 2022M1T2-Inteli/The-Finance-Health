@@ -1,0 +1,249 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://jogador/jogador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://tile_Set/paredeV.tscn" type="PackedScene" id=2]
+[ext_resource path="res://tile_Set/paredevd.tscn" type="PackedScene" id=3]
+[ext_resource path="res://bola.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/mundo.gd" type="Script" id=5]
+[ext_resource path="res://assets_trabalho/2.png" type="Texture" id=6]
+[ext_resource path="res://font/Symtext.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://music/MusicaWorkOut.mp3" type="AudioStream" id=8]
+[ext_resource path="res://assets/buttons/button-right.png" type="Texture" id=9]
+[ext_resource path="res://assets/buttons/button-left.png" type="Texture" id=10]
+[ext_resource path="res://img/space.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 6
+font_data = ExtResource( 7 )
+
+[node name="mundo" type="Node"]
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 524, 340 )
+scale = Vector2( 0.845833, 0.733333 )
+texture = ExtResource( 6 )
+
+[node name="jogador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 344, 528 )
+scale = Vector2( 0.8, 0.5 )
+
+[node name="parede_esquerda" type="Node2D" parent="."]
+
+[node name="paredeV" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 576 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV2" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 528 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV3" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 480 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV4" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 432 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV5" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 384 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV6" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 336 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV7" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 288 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV8" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 240 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV9" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 192 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV10" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40, 144 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV11" parent="parede_esquerda" instance=ExtResource( 2 )]
+position = Vector2( 40.0001, 96 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto" type="Node2D" parent="."]
+
+[node name="teto" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 40.0001, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto2" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 104, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto3" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 168, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto4" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 232, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto5" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 296, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto6" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 360, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto7" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 424, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto8" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 488, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto9" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 552, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto10" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 616, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto11" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 680, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto12" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 744, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto13" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 808, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto14" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 872, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto15" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 936, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="teto16" parent="teto" instance=ExtResource( 3 )]
+position = Vector2( 1000, 48 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="bola" parent="." instance=ExtResource( 4 )]
+position = Vector2( 376, 536 )
+scale = Vector2( 0.2, 0.2 )
+rapidez = 500
+
+[node name="parede_direita" type="Node2D" parent="."]
+position = Vector2( 16, 0 )
+
+[node name="paredeV12" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 576 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV13" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 528 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV14" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 480 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV15" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 432 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV16" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 384 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV17" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 336 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV18" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 288 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV19" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 240 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV20" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 192 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV21" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 144 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="paredeV22" parent="parede_direita" instance=ExtResource( 2 )]
+position = Vector2( 992, 96 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 528, 336 )
+current = true
+zoom = Vector2( 2.2, 2 )
+
+[node name="relogio" type="Label" parent="."]
+margin_left = 1093.0
+margin_top = 80.0
+margin_right = 1215.0
+margin_bottom = 140.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sair_trabalho" type="Button" parent="."]
+margin_left = 1092.0
+margin_top = -7.0
+margin_right = 1121.0
+margin_bottom = 9.0
+rect_scale = Vector2( 4.5, 5 )
+custom_fonts/font = SubResource( 2 )
+text = "SAIR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicaMiniGameWorkOut" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+autoplay = true
+
+[node name="left" type="TouchScreenButton" parent="."]
+position = Vector2( 79, 597 )
+scale = Vector2( 2.7, 2.7 )
+normal = ExtResource( 10 )
+action = "mover_esquerda"
+
+[node name="right" type="TouchScreenButton" parent="."]
+position = Vector2( 851, 596 )
+scale = Vector2( 2.675, 2.675 )
+normal = ExtResource( 9 )
+action = "mover_direita"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 396, 622 )
+scale = Vector2( 0.575221, 0.575221 )
+normal = ExtResource( 11 )
+action = "fire"
+
+[connection signal="pressed" from="sair_trabalho" to="." method="_on_sair_trabalho_pressed"]

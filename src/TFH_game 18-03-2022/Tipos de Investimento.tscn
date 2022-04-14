@@ -1,0 +1,102 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://livroBiblioteca.png" type="Texture" id=1]
+[ext_resource path="res://TiposInvestimento.gd" type="Script" id=2]
+[ext_resource path="res://font/Symtext.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+outline_color = Color( 0.34902, 0.0509804, 0.0509804, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 65
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+outline_color = Color( 1, 0.0117647, 0.0117647, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Tipos de Investimento" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Livro" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 320.5, 182.625 )
+scale = Vector2( 0.344271, 0.340046 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="pagina1TI" type="Label" parent="CanvasLayer/Livro"]
+anchor_left = 0.098
+anchor_top = 0.044
+anchor_right = 0.47
+anchor_bottom = 0.913
+margin_left = -959.16
+margin_top = -540.52
+margin_right = -959.4
+margin_bottom = -491.04
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.47451, 0.0470588, 0.0470588, 1 )
+custom_colors/font_color_shadow = Color( 0.6, 0.0313726, 0.0313726, 1 )
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProximaPagina" type="Button" parent="CanvasLayer/Livro"]
+anchor_left = 0.776
+anchor_top = 0.888
+anchor_right = 0.933
+anchor_bottom = 0.962
+margin_left = -959.92
+margin_top = -540.04
+margin_right = -959.36
+margin_bottom = -539.96
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Próxima Página"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VoltarBiblioteca" type="Button" parent="CanvasLayer/Livro"]
+anchor_left = 0.644
+anchor_top = 0.4
+anchor_right = 0.837
+anchor_bottom = 0.521
+margin_left = -959.082
+margin_top = -539.706
+margin_right = -959.642
+margin_bottom = -540.386
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Voltar"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VoltarPagina" type="Button" parent="CanvasLayer/Livro"]
+margin_left = -826.384
+margin_top = 392.226
+margin_right = -466.384
+margin_bottom = 511.226
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Voltar Página"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="CanvasLayer/Livro/ProximaPagina" to="CanvasLayer/Livro" method="_on_ProximaPagina_pressed"]
+[connection signal="pressed" from="CanvasLayer/Livro/VoltarBiblioteca" to="CanvasLayer/Livro" method="_on_VoltarBiblioteca_pressed"]
+[connection signal="pressed" from="CanvasLayer/Livro/VoltarPagina" to="CanvasLayer/Livro" method="_on_VoltarPagina_pressed"]
