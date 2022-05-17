@@ -4,25 +4,25 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Grupo 5
+# The Finance Health
 
 ## The Finance Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/vinicius-oliveira-fernandes-627b68168/">Vinícius Fernandes</a>, <a href="https://www.linkedin.com/in/leandro-duarte/">Leandro Duarte</a>, Igor Scapin Francisco Garcia </a>, <a href="https://www.linkedin.com/in/rodrigo-rodrigues-8b70191ab/">Rodrigo Rodrigues</a>, <a href="https://www.linkedin.com/in/victorbarq/">Felipe Leão</a>, <a href="https://www.linkedin.com/in/victorbarq/"> Mateus Neves</a>, <a href="https://www.linkedin.com/in/victorbarq/"> Beny Frid</a>
+## Integrantes: 
+
+- <a href="https://www.linkedin.com/in/vinicius-oliveira-fernandes-627b68168/">Vinícius Fernandes</a>
+- <a href="https://www.linkedin.com/in/leandro-duarte/">Leandro Duarte</a>
+- Igor Scapin Francisco Garcia </a>
+- <a href="https://www.linkedin.com/in/rodrigo-rodrigues-8b70191ab/">Rodrigo Rodrigues</a>
+- <a href="https://www.linkedin.com/in/victorbarq/">Felipe Leão</a>
+- <a href="https://www.linkedin.com/in/victorbarq/"> Mateus Neves</a>
+- <a href="https://www.linkedin.com/in/victorbarq/"> Beny Frid</a>
 
 ## Descrição
 
 📜 Desmistificamos o conceito arcaico do Conteúdo de Educação Financeira e Investimentos… Venha aprender sobre Investimentos e Educação Financeira, de uma forma fácil e divertida!
 
 O objetivo do jogo é passar conhecimentos de educação financeira de uma forma divertida e intuitiva. Isso será retratado na vida de um personagem com problemas reais, na administração de recursos financeiros em situações cotidianas de maneira interativa e atrativa. 
-<br><br>
-<br><br>
-<p align="center">
-<img src="https://img.itch.zone/aW1hZ2UvMTQxNjg0Ni84MzQ1MjM2LnBuZw==/794x1000/ZX818Q.png" alt="The Finance Health" border="0">
-
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
-</p>
-
 
 💡 “The Finance Health” é um jogo focado na vida de um jovem adulto que se depara com algumas adversidades financeiras. O jogo tem como principal objetivo tornar a Educação Financeira e a busca por conhecimento em investimentos, uma coisa divertida. O jogo se passa numa cidade fictícia em que as ações dos jogadores se delimitam a tarefas e desafios diários em espaços da cidades.  
 
@@ -33,104 +33,78 @@ O core do jogo é baseado em consequências e o aprendizado do player com cada a
 
 -Raiz<br>
 |<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
+|--> documentos<br>
+  &emsp;|--> antigos<br>
+  &emsp;| Modelo GDD - Grupo 5.docx<br>
+|--> executáveis<br>
+  &emsp;|--> Windows<br>
+  &emsp;|--> HTML<br>
+|--> imagens<br>
+|--> src<br>
+  &emsp;|--> Godot (Arquivos)<br>
+| readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+A pasta raiz contém um arquivo principal:
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+- <b>readme.md</b>, que consiste em um guia geral sobre o projeto.
 
-Há também 4 pastas que seguem da seguinte forma:
+E, também, 4 subpastas que se organizam da seguinte forma:
 
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+- <b>documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
 
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar, com 2 pastas: uma para binários windows e uma para a web.
 
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
+- <b>imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
 
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+- <b>src</b>, onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-https://the-finance-team.itch.io/tfh
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+Não há instalação, apenas executável. Baixe os arquivos disponíveis em https://github.com/2022M1T2/Projeto5/tree/main/execut%C3%A1veis/Windows e execute "TFH_game.exe" como qualquer outro programa.
 
-```sh
-Coloque código do prompt de comnando se for necessário
+```
+Observe que é necessário que o arquivo "TFH_game.pck" esteja
+no mesmo diretório que "TFH_game.exe" para que o jogo inicie
+corretamente.
 ```
 
 <b>HTML:</b>
 
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Não há instalação! Baixe os arquivos disponíveis em https://github.com/2022M1T2/Projeto5/tree/main/execut%C3%A1veis/HTML e execute-o como uma página da web (através de algum navegador).
+
+```sh
+Dependendo de suas configurações de firewall, talvez seja necessário
+instaurar um web service como xampp ou wampp para que o jogo rode lo-
+calmente.
+```
+
+A versão web também pode ser acessada por meio do seguinte link: https://the-finance-team.itch.io/tfh
+
 
 ## 📈 Exemplo de uso
 
 Nosso game tem um grande diferencial por estimular o conhecimento financeiro por meio de desafios que o usuário enfrentará durante cada interação no jogo, tais como: decisões de compra, investimentos e análise de seu conhecimento.
 
-Adicione blocos de códigos e, se necessário, screenshots.
-
-Este modelo pode ser copiado e utilizado à vontade.
-
-Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
-
-## 💻 Configuração para Desenvolvimento
+## 💻 Configuração para desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+-<a href="https://godotengine.org/download"> Godot</a>
 
-Assim que baixar o Godot, próximo passo é baixar o nosso jogo aqui no Github pro seu Desktop (Abra a pasta "src" e baixe o arquivo zipado).
-
-Dentro do Godot você clicará em "Importar" e precisará localizar o arquivo do jogo e clicar nele para entrar. 
-
-Assim que você entrar no jogo no Godot, você clicará no ícone "Play" ( > ) para iniciar e visualizar o jogo rodando!
-
-ps: para visualizar o script você pode clicar no ícone de pergaminho e verificar o nosso código com base em cada Cena Criada (cada Cena fica na aba "Arquivos").
-
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+Instruções para a configuração do ambiente de desenvolvimento:
 ```
 
-## 🗃 Histórico de lançamentos
+1) Clone o repositório.
+2) Abra a engine de desenvolvimento (godot).
+3) No gerenciador de projetos inicial, clique no botão "importar" e, em seguida, no botão "navegar".
+4) Navegue até o repositório clonado e abra a pasta "src", e após, abra a pasta "Godot (Arquivos)".
+5) Selecione o arquivo "project.godot" e em seguida clique no botão "abrir".
+6) Pronto. O seu ambiente de desenvolvimento está configurado.
 
-A cada atualização os detalhes devem ser lançados aqui.
-
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+```
 
 ## 📋 Licença/License
 
